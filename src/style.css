@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* navbar */
+nav {
+    position: sticky;
+    top: o;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+nav ul {
+    display: flex;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+nav .nav-links a {
+    font-size: 1.3em;
+    color: #234CAD;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 60px;
+    width: 100%;
+}
+
+.nav-links a:hover{
+    color: #001c5f;
+}
+
+.btnLogin {
+    width: 110px;
+    height: 40px;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #234CAD;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #234CAD;
+    font-weight: 600;
+    margin-right: 20px;
+    transition: .5s;
+}
+
+.btnLogin:hover {
+    background-color:#285acd ;
+    color: #F2F6FF;
+}
+
+.btnRegister {
+    width: 120px;
+    height: 40px;
+    align-items: center;
+    background-color: #F2F6FF;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #234CAD;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+
+nav .toggle_btn {
+    color: #285acd;
+    cursor: pointer;
+    display: none;
+}
+
+/* dropdown menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 65px;
+    height: 0;
+    width: 300px;
+    background: #b5c7f3;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown.open {
+    height: 330px;
+}
+
+.dropdown ul {
+    padding: 0px;
+}
+
+.dropdown li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.dropdown a {
+    font-size: 1.1em;
+    color: #234CAD;
+    text-decoration: none;
+}
+
+.dropdown .btnLogin, .dropdown .btnRegister  {
+    width: 100%;
+    margin-right: 0px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+    nav .nav-links a {
+        font-size: 1.1em;
+        margin-right: 30px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 780px) {
+    nav .nav-links, nav .nav-buttons {
+        display: none;
+    }
+
+    nav .toggle_btn {
+        display: block;
+    }
+
+    .dropdown {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown {
+        left: 2rem;
+        width: unset;
+    }
+}
