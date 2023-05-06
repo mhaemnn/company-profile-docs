@@ -145,3 +145,10 @@ nav .toggle_btn {
         display: block;
     }
 }
+
+@media (max-width: 576px) {
+    .dropdown {
+        left: 2rem;
+        width: unset;
+    }
+}
