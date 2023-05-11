@@ -22,7 +22,7 @@ nav {
 }
 h2 {
   color: #234cad;
-  font-weight: bold;
+  font-weight: 800;
 }
 nav ul {
   display: flex;
@@ -121,10 +121,6 @@ nav .toggle_btn {
   width: 100%;
   margin-right: 0px;
 }
-
-/* servie */
-/* langganan */
-/* footer */
 
 /* Responsive Design */
 
