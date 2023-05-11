@@ -374,10 +374,68 @@ nav .toggle_btn {
   margin-left: 400px;
 }
 
+/* SECURITY */
+#security {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#security .security {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+#security .security .cloud-based {
+  display: flex;
+  align-items: center;
+  flex: 50%;
+  color: #234cad;
+}
+
+#security .security .secured {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex: 50%;
+  color: #234cad;
+}
+
+#security .security .cloud-based .cloud-circle,
+#security .security .secured .secured-circle {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f6ff;
+  border-radius: 50%;
+}
+
+#security .security .cloud-based h4,
+#security .security .secured h4 {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin: 0;
+}
+
+#security .security .cloud-based p,
+#security .security .secured p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
   #banner .bg-banner .container-banner .card-7 {
   display: none;
+  }
+
+  #security .security .cloud-based .cloud-circle,
+  #security .security .secured .secured-circle {
+      width: 70px;
+      height: 70px;
+      font-size: 1em;
   }
 }
 
@@ -385,9 +443,20 @@ nav .toggle_btn {
   #banner .bg-banner .container-banner .card-5,
   #banner .bg-banner .container-banner .card-3, 
   #banner .bg-banner .container-banner .card-8
-   {
+  {
       display: none;
   }
+
+  #security .security .cloud-based h4,
+    #security .security .secured h4 {
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+
+    #security .security .cloud-based p,
+    #security .security .secured p {
+        font-size: 0.9em;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -415,6 +484,15 @@ nav .toggle_btn {
   .dropdown {
     display: block;
   }
+
+  #security .security {
+    flex-direction: column;
+}
+
+#security .security .secured {
+    margin-top: 20px;
+    justify-content: start;
+}
 }
 
 @media (max-width: 576px) {
@@ -426,4 +504,26 @@ nav .toggle_btn {
   #banner {
     margin-left: 50px;
   }
+
+  #security {
+    margin-right: 0;
+}
+
+#security .security .cloud-based .cloud-circle,
+#security .security .secured .secured-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 0.6em;
+}
+
+#security .security .cloud-based h4,
+#security .security .secured h4 {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+#security .security .cloud-based p,
+#security .security .secured p {
+    font-size: 0.8em;
+}
 }
