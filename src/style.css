@@ -7,7 +7,7 @@
   font-family: "Nunito", sans-serif;
 }
 
-/* navbar */
+/* NAVBAR */
 nav {
   position: sticky;
   top: 0;
@@ -26,6 +26,7 @@ h2 {
 }
 nav ul {
   display: flex;
+  margin-top: 15px;
 }
 
 .nav-links li {
@@ -81,7 +82,7 @@ nav .toggle_btn {
   display: none;
 }
 
-/* dropdown menu */
+/* DROPDOWN MENU */
 .dropdown {
   display: none;
   position: absolute;
@@ -122,7 +123,272 @@ nav .toggle_btn {
   margin-right: 0px;
 }
 
+/* BANNER */
+#banner {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#banner .bg-banner {
+  height: 575px;
+  width: auto;
+  background-color: #f2f6ff;
+  border-radius: 60px;
+  margin-top: 50px;
+  display: flex;
+}
+
+#banner .bg-banner .container-banner {
+  background-color: #f2f6ff;
+  border-radius: 60px;
+  display: flex;
+}
+
+#banner .bg-banner .container-banner .banner-right {
+  display: flex;
+  flex: 40%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+#banner .bg-banner .container-banner .banner-left {
+  display: flex;
+  flex: 60%;
+}
+
+#banner .bg-banner .container-banner h1 {
+  color: #234cad;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#banner .bg-banner .container-banner .introduction {
+  color: #234cad;
+  font-size: 1.1em;
+  line-height: 26px;
+  margin-top: 25px;
+}
+
+#banner .bg-banner .container-banner .button-banner {
+  align-items: center;
+  background-color:#f2f6ff;
+  border: 2px solid #234cad;
+  color: #234cad;
+  border-radius: 32.5px;
+  width: 150px;
+  height: 50px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+#banner .bg-banner .container-banner .button-banner:hover {
+  background-color: #285acd;
+  color: #f2f6ff;
+}
+
+#banner .bg-banner .container-banner .card-1, 
+#banner .bg-banner .container-banner .card-8 {
+  width: 90px;
+  height: 85px;
+  background-color: #ffffff;
+  color: #234cad;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+#banner .bg-banner .container-banner .card-2,
+#banner .bg-banner .container-banner .card-5,
+#banner .bg-banner .container-banner .card-6, 
+#banner .bg-banner .container-banner .card-7{
+  width: 360px;
+  height: 110px;
+  background-color: #ffffff;
+  color: #234cad;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: absolute;
+}
+
+#banner .bg-banner .container-banner .card-2 .quarter-circle-1 img {
+  position: absolute;
+  width: 220px;
+  margin-left: -55px;
+  margin-top: -63px;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  background-color: #f2f6ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.description {
+  padding-left: 20px;
+}
+
+#banner .bg-banner .container-banner h4 {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 0;
+}
+
+#banner .bg-banner .container-banner p {
+  font-size: 0.9em;
+  margin: 0
+}
+
+#banner .bg-banner .container-banner .card-3{
+  width: 120px;
+  height: 160px;
+  background-color: #ffffff;
+  color: #234cad;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+#banner .bg-banner .container-banner .card-3 .quarter-circle-2 img{
+  width: 220px;
+  position: absolute;
+  margin-left: -110px;
+  margin-top: -58px;
+}
+
+#banner .bg-banner .container-banner .card-4 {
+  width: 250px;
+  height: 150px;
+  background-color: #ffffff;
+  color: #234cad;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 35px;
+  position: absolute;
+}
+
+#banner .bg-banner .container-banner .card-4 .full-circle img {
+  width: 170px;
+  position: absolute;
+  margin-left: -72px;
+  margin-top: -68px;
+}
+
+.circles-cal {
+  display: flex;
+}
+
+.circle1, .circle2, .circle3, .circle4 {
+  width: 35px;
+  height: 35px;
+  background-color: #f2f6ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #234cad;
+  font-size: 0.7em;
+  font-weight: 600;
+  margin-left: -8px;
+  border: 2px solid white;
+}
+
+.little-circle {
+  width: 15px;
+  height: 15px;
+  background-color: #234cad;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.7em;
+  position: absolute;
+  margin-left: 45px;
+  margin-top: -30px;
+}
+
+#banner .bg-banner .container-banner .card-5 .time,
+#banner .bg-banner .container-banner .card-6 .time {
+  margin-top: -25px;
+  font-size: 0.7em;
+}
+
+#banner .bg-banner .container-banner .card-5 .circle span,
+#banner .bg-banner .container-banner .card-6 .circle span {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+#banner .bg-banner .container-banner .card-1 {
+  margin-top: 20px;
+}
+
+#banner .bg-banner .container-banner .card-2 {
+  margin-top: 120px;
+}
+
+#banner .bg-banner .container-banner .card-3 {
+  margin-top: 70px;
+  margin-left: 400px;
+}
+
+#banner .bg-banner .container-banner .card-4 {
+  margin-top: 260px;
+}
+
+#banner .bg-banner .container-banner .card-5 {
+  margin-top: 260px;
+  margin-left: 300px;
+}
+
+#banner .bg-banner .container-banner .card-6 {
+  margin-top: 440px;
+}
+
+#banner .bg-banner .container-banner .card-7 {
+  margin-top: 390px;
+  margin-left: 450px;
+}
+
+#banner .bg-banner .container-banner .card-8 {
+  margin-top: 520px;
+  margin-left: 400px;
+}
+
 /* Responsive Design */
+@media (max-width: 1200px) {
+  #banner .bg-banner .container-banner .card-7 {
+  display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  #banner .bg-banner .container-banner .card-5,
+  #banner .bg-banner .container-banner .card-3, 
+  #banner .bg-banner .container-banner .card-8
+   {
+      display: none;
+  }
+}
 
 @media (max-width: 1024px) {
   nav .nav-links a {
@@ -134,7 +400,11 @@ nav .toggle_btn {
 
 @media (max-width: 780px) {
   nav .nav-links,
-  nav .nav-buttons {
+  nav .nav-buttons,
+  #banner .bg-banner .container-banner .card-1,
+  #banner .bg-banner .container-banner .card-2,
+  #banner .bg-banner .container-banner .card-4,
+  #banner .bg-banner .container-banner .card-6 {
     display: none;
   }
 
@@ -151,5 +421,9 @@ nav .toggle_btn {
   .dropdown {
     left: 2rem;
     width: unset;
+  }
+
+  #banner {
+    margin-left: 50px;
   }
 }
