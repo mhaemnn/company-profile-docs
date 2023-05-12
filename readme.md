@@ -1,4 +1,4 @@
-### Project 2 [kelompok 1]
+### Project 2 [Group 1]
 
 salam sejahtera untuk kita semua,,,,
 readme, puji syukur kami kepada tuhan yang maha esa sehingga kami dapat menyelesaikan projek 2 tanpa halangan apapun
