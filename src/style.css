@@ -1863,3 +1863,23 @@ margin-top: 16px;
 }
 
 /* bagus */
+=======
+
+@media (max-width: 500px) {
+  #banner {
+    margin-left: 20px;
+    
+  }
+
+  #security {
+    margin-left: 20px;
+}
+}
+
+@media (max-width: 425px) {
+  #banner {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
